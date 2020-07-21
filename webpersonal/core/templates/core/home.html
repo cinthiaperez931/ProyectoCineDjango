@@ -1,0 +1,31 @@
+{% extends  'core/base.html' %}
+
+{% block title %} Inicio {% endblock %}
+
+
+{% block background %} {% load static %} {% static 'core/img/home.jpg'%} {% endblock %}
+{% block headers %}
+
+<h1>CineInfo</h1>
+<span class="subheading">Sean Bienvenidos A nuestra pagina</span>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="row project">  
+ 	
+	      	<div class="col-lg-3 col-md-4 offset-lg-1">
+			      <img class="img-fluid" src=" {% static 'core/img/logocentral.png '%}" alt="">
+	      	</div>
+	        <div class="col-lg-7 col-md-8">
+	      		<h2 class="section-heading title">Nuestro Proyecto</h2>   
+	          <p>A continuacion les mostramos, en lo que consiste CineInfo.Esperamos Su Apoyo</p>
+	          <p><a href="https://www.youtube.com/watch?v=KYQ3B-99APY">Más información</a></p>
+	      	</div>
+	      </div>
+     </div>     
+
+{% endblock%}
+
+

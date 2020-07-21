@@ -1,0 +1,27 @@
+{% extends  'core/base.html' %}
+
+
+{% block background %} {% load static %}{% static 'core/img/contact.jpg'%}{% endblock %}
+{% block headers %}
+
+<h1>Contacto</h1>
+<span class="subheading">Nuestra Informacion de Contacto</span>
+{% endblock %}
+
+
+{% block content %}
+ 
+<div class="col-lg-8 col-md-10 mx-auto">
+        <div class="col-lg-5 col-md-4 offset-lg-1">
+          <img class="img-fluid " src="{% static 'core/img/logocentral.png '%}" alt="">
+        </div>
+<div class="row">
+
+    <p>Síguenos si amas las películas y quieres enterarte de todos los estrenos y funciones.</p>
+    <br>
+    <p><b>Teléfono:</b> +09 876 543 210</p>
+
+    </div>
+</div>
+
+{% endblock %}

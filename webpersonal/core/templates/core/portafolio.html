@@ -1,0 +1,29 @@
+{% extends  'core/base.html' %}
+
+<h1>  Mi web personal </h1> 
+
+
+{% block background %}{% load static %}{% static 'core/img/portfolio.jpg'%}{% endblock %}
+
+{% block headers %}
+<h1>Películas en carteleras</h1>
+<span class="subheading">Funciones y estrenos</span>
+
+{% endblock %}
+
+
+{% block content %}
+ 
+	     
+	      <div class="row project">  	
+	      	<div class="col-lg-3 col-md-4 offset-lg-1">
+			      <img class="img-fluid" src="{% static 'core/img/logocentral.png'%}" alt="">
+	      	</div>
+	        <div class="col-lg-7 col-md-8">
+	      		<h2 class="section-heading title">Películas en cartelera en los cines de la quinta región.</h2>   
+
+
+	      	</div>
+	      </div>
+
+{% endblock %}

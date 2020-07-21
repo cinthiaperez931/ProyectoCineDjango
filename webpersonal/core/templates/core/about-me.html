@@ -1,0 +1,24 @@
+{% extends  'core/base.html' %}
+
+{% block background %}{% load static %}{% static 'core/img/about.jpg'%}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de Nosotros</h1>
+<span class="subheading">Información sobre tus cines favoritos de la quinta región</span>
+
+{% endblock %}
+
+
+{% block content %}
+ <div class="row">
+ <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid " src="{% static 'core/img/logocentral.png '%}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading">CineInfo</h2>   
+          <p>Nuestro propósito es que puedas tener un mejor y más fácil acceso acerca de tus cines favoritos en la región de Valparaíso</p>
+          <p>Funciones, entradas, estrenos, ventas y promociones todo en un solo lugar.</p>
+        </div>
+    </div>
+{% endblock %}
+
